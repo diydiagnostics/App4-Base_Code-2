@@ -38,27 +38,32 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 
 <script>
-        var allergy_count = 0; //allergy count to begin at 0
-        var cold_count = 0; //cold count to begin at 0
+        var contactdermatitis_count = 0; //contactdermatitis count to begin at 0
+        var scabies_count = 0; //scabies count to begin at 0
 
-        function allergyAdd(){
-            allergy_count = allergy_count + 1; //if question relates to allergy, add 1
-		alert(allergy_count); //alerts that question relates to allergy 
+        function contactdermatitisAdd(){
+            contactdermatitis_count = contactdermatitis_count + 1; //if question relates to contact dermatitis, add 1
+		alert(contactdermatitis_count); //alerts that question relates to contact dermatitis 
 
         }
-
-        function coldAdd(){
+	
+	 function scabiesAdd(){
+            scabies_count = scabies_count + 1; //if question relates to scabies, add 1
+        }
+	
+	function getResults(){
+		var  function coldAdd(){
             cold_count = cold_count + 1; //if question relates to cold, add 1
         }
 	
 	function getResults(){
-		var allergyPercent = (allergy_count / 4) * 100; //equation to calculate the allergy percent by questions that answered "Yes" to allergies
-		var coldPercent = (cold_count / 4) * 100; //equation to calculate the cold percent by questions that answered "Yes" to cold
-		document.getElementById("results").innerHTML = "Probability it is allergies =" + allergyPercent + "<br> Probability it is a cold = " + coldPercent; 	//function to calculate the percent possibility that it is either allergies or a cold
+		var contactdermatitisPercent = (contactdermatitis_count / 4) * 100; //equation to calculate the contact dermatitis percent by questions that answered "Yes" to contact dermatitis
+		var scabiesPercent = (scabies_count / 4) * 100; //equation to calculate the scabies percent by questions that answered "Yes" to scabies
+		document.getElementById("results").innerHTML = "Probability it is contactdermatitis =" + contactdermatitisPercent + "<br> Probability it is a scabies = " + scabiesPercent; 	//function to calculate the percent possibility that it is either contact dermatitis or scabies
+
 	}
 
   </script>
-
 
 
 <style>	
