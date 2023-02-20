@@ -90,11 +90,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Cold or Allergies?</h1>  <! header on first page when visiting site >
+	<h1>Contact dermatitis or Scabies?</h1>  <! header on first page when visiting site >
 </div>
 	
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a cold but wonder if it is allergies. Answer a few short questions to find out!</p>  <! introduction paragraph >
+	<p>Are you wondering if your rash could potentially be scabies?. Answer a few short questions to find out!</p>  <! introduction paragraph >
 	
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a>  <! code for button on first page, this brings you to series of questions >
 	
@@ -105,14 +105,14 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <div class="page" id="one">  <! this page includes code that asks the user the first question. Once user presses the "Yes" or "No" button, the user will be directed to page 2 >
 	<div id="header" class="w3-container w3-flat-carrot">
 		<h1>Question 1</h1>
-	<!-- added code to make yes or no buttons for question 1, response goes into function for allergy and cold --> 
+	<!-- added code to make yes or no buttons for question 1, response goes into function for contact dermatits and scabies --> 
 	</div>
 	
     	<div id="content" class="w3-container">
-	<p>Are your eyes watery or itchy?</p>   <! question 1 that is asked to user >
+	<p>Is your rash mainly itching at night?</p>   <! question 1 that is asked to user >
 	</div>
-	<a href="#two" onclick="allergyAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <! if user responds yes, one will be added to allergy >
-	<a href="#two" onclick="coldAdd();"class="w3-btn w3-grey w3-round"> No </a>  <! if user responds no, one will be added to code >
+	<a href="#two" onclick="scabiesAdd();"class="w3-btn w3-grey w3-round"> Yes </a>  <! if user responds yes, one will be added to scabies >
+	<a href="#two" onclick="contactdermatitisAdd();"class="w3-btn w3-grey w3-round"> No </a>  <! if user responds no, one will be added to contact dermatitis  >
      
 		 <!-- added question into content section --> 
     	</div>
